@@ -1,0 +1,47 @@
+{
+  "name": "arithmetic",
+  "version": "1.0.0",
+  "description": "Data Structures and Algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sa0012/-.git"
+  },
+  "keywords": [
+    "Data",
+    "Structures",
+    "and",
+    "Algorithms"
+  ],
+  "author": "juckchen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sa0012/-/issues"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "{*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "homepage": "https://github.com/sa0012/-#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.2.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.9"
+  }
+}
